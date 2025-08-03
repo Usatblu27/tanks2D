@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DLMTank</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="photo/ico.png" type="image/x-ico\" />
+    <title>танчики</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="flex">
-      <div class="title">DLMTank</div>
-      <div class="containermode">
-        mode:
-        <a href="html/boss.html" class="linkActive">bosses</a>
-        <a href="html/holdOut.html" class="linkActive">hold out</a>
-        <a
-          href=""
-          class="linkNotActive"
-          title="Данный функционал будет добавлен позже, вслучае популярности игры"
-          >online
-        </a>
-      </div>
+    <div id="gameInfo">уничтожено танков: <span id="kills">0</span></div>
+    <div id="hearts"></div>
+    <div id="gameOver">игра окончена</div>
+    <button id="restartBtn">играть сначала</button>
+    <div id="powerupTimer"></div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <canvas id="miniMap" width="350" height="350"></canvas>
+
+    <div id="mobileControls"></div>
+    <div id="moveJoystick">
+      <div id="moveKnob"></div>
     </div>
+    <div id="aimJoystick">
+      <div id="aimKnob"></div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
-
