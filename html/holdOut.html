@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dlmTank</title>
+    <link rel="stylesheet" href="/css/holdOut.css" />
+    <link rel="shortcut icon" href="/photo/ico.png" type="image/x-ico\" />
+  </head>
+  <body>
+    <a href="/html/index.html" class="link">на главную</a>
+    <div class="gamekills">
+      Уничтожено танков: <span id="kills" class="info">0</span>
+    </div>
+    <div id="hearts"></div>
+    <div id="gameOver">Игра окончена</div>
+    <button id="restartBtn">Играть сначала</button>
+    <div id="powerupTimer"></div>
+    <canvas id="gameCanvas" width="1000" height="800"></canvas>
+    <canvas id="miniMap" width="350" height="350"></canvas>
+
+    <div id="mobileControls"></div>
+    <div id="moveJoystick">
+      <div id="moveKnob"></div>
+    </div>
+    <div id="aimJoystick">
+      <div id="aimKnob"></div>
+    </div>
+    <script src="/js/holdOut.js"></script>
+  </body>
+</html>
